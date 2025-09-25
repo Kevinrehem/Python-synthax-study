@@ -1,5 +1,12 @@
 # Exercício 2
 def is_palindrome(some_str):
+    """
+    Verifica se uma string é igual a si própria de trás para frente desconsiderando espaços
+
+    Args: string
+
+    Return: boolean
+    """
     some_str = some_str.lower()
     some_str = some_str.replace(' ', '')
     return some_str == some_str[::-1]
